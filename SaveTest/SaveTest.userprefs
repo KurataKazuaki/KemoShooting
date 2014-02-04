@@ -1,10 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TestPlayer\TestBulletFire.cs">
     <Files>
       <File FileName="Assets\TestPlayer\TestPlayer.cs" Line="9" Column="42" />
-      <File FileName="Assets\TestBullet\bullet.cs" Line="4" Column="20" />
-      <File FileName="Assets\TestPlayer\TestBulletFire.cs" Line="38" Column="46" />
+      <File FileName="Assets\TestBullet\bullet.cs" Line="10" Column="2" />
+      <File FileName="Assets\TestPlayer\TestBulletFire.cs" Line="39" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

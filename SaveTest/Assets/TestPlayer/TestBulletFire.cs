@@ -11,37 +11,43 @@ public class TestBulletFire : MonoBehaviour {
 	public float interval = 1f;
 
 	// 発射フラグ
-	private bool isFire = true;
+	private bool isFire = false;
 
 	// 発射開始
 	void StartShot (){
 		if (!isFire) {
 			isFire = true;
-			StartCoroutine ("FireBullet");
 		}
 	}
 	// 発射停止
 	void StopShot (){
 		if (isFire) {
 			isFire = false;
-			StopCoroutine ("FireBullet");
 		}
 	}
 
 	// ショット発射
 	IEnumerator FireBullet(){
-		// 無限ループ
-		while (true) {
+		// ショット停止ループ
+		while (!isFire) {
+			yield return null;
+		}
+
+		// 発射ループ
+		while (isFire) {
 			// メインショットプレハブを、プレイヤーオブジェクトの位置にインスタンス化
 			Instantiate(mainShot, transform.position, Quaternion.identity);
 			// interval分だけ処理を停止
 			yield return new WaitForSeconds(interval);
 		}
+
 	}
 
 	// Use this for initialization
 	void Start () {
-	
+		// ショット発射開始
+		StartCoroutine ( FireBullet() );
+		StartShot ();
 	}
 	
 	// Update is called once per frame
