@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Editor\GameObjectSelectionMenuItems.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TestPlayer\TestBulletFire.cs">
     <Files>
-      <File FileName="Assets\Scripts\Editor\GameObjectSelectionMenuItems.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Editor\GameObjectSelectionMenuItems.cs" Line="1" Column="1" />
+      <File FileName="Assets\TestPlayer\TestPlayer.cs" Line="9" Column="42" />
+      <File FileName="Assets\TestBullet\bullet.cs" Line="4" Column="20" />
+      <File FileName="Assets\TestPlayer\TestBulletFire.cs" Line="38" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

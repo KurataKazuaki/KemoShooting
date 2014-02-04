@@ -13,8 +13,10 @@ public class TestPlayer : MonoBehaviour {
 
 	private bool autoSave = true;
 
-	private SaveData saveData = new SaveData();
+	//private SaveData saveData = new SaveData();
+	[SerializeField] SaveData saveData = new SaveData();
 
+	[System.Serializable]
 	public class SaveData
 	{
 		public Vector3 position;
@@ -83,7 +85,7 @@ public class TestPlayer : MonoBehaviour {
 
 	void OnGUI()
 	{
-		//GUILayout.Label( LitJson.JsonMapper.ToJson( saveData ) );
-		//autoSave = GUILayout.Toggle( autoSave, "Auto Save" );
+		GUILayout.Label( LitJson.JsonMapper.ToJson( saveData ) );
+		autoSave = GUILayout.Toggle( autoSave, "Auto Save" );
 	}
 }
