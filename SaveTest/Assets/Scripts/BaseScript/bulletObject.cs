@@ -16,7 +16,7 @@ public class bulletObject : MonoBehaviour {
 	}
 
 	// 敵と当たって居る状態
-	void OnCollider (Collider other){
+	void OnTriggerEnter2D (Collider2D other){
 		Debug.Log ("Bullet Hit to something");
 		if (other.tag == "Enemy") {
 			other.SendMessage ("Damage", power);
