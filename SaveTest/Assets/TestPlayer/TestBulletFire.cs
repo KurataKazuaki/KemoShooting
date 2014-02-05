@@ -4,7 +4,7 @@ using System.Collections;
 public class TestBulletFire : MonoBehaviour {
 
 	// メインショット プレハブ
-	public bullet mainShot;
+	public bulletObject mainShot;
 	// 同時発射弾数
 	public int ways = 1;
 	// 発射間隔

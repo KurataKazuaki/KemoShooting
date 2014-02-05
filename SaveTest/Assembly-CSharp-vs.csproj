@@ -55,9 +55,12 @@
      <Compile Include="Assets\LitJson\JsonWriter.cs" />
      <Compile Include="Assets\LitJson\Lexer.cs" />
      <Compile Include="Assets\LitJson\ParserToken.cs" />
+     <Compile Include="Assets\Scripts\BaseScript\EnemyObject.cs" />
+     <Compile Include="Assets\Scripts\BaseScript\bulletObject.cs" />
      <Compile Include="Assets\Scripts\SaveCenter\SaveCenter.cs" />
      <Compile Include="Assets\Scripts\SaveCenter\SaveKey.cs" />
-     <Compile Include="Assets\TestBullet\bullet.cs" />
+     <Compile Include="Assets\TestBullet\blazeBulletScript.cs" />
+     <Compile Include="Assets\TestEnemy\testEnemyScript.cs" />
      <Compile Include="Assets\TestPlayer\TestBulletFire.cs" />
      <Compile Include="Assets\TestPlayer\TestPlayer.cs" />
   </ItemGroup>

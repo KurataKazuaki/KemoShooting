@@ -3,6 +3,9 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Player
+  - Enemy
+  - Bullet
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -41,11 +44,15 @@ TagManager:
     userID: 0
     uniqueID: 0
     locked: 0
-  - name: hoge
+  - name: Enemy
+    userID: 3
+    uniqueID: 3613052249
+    locked: 0
+  - name: Player
     userID: 1
     uniqueID: 223533983
     locked: 0
-  - name: piyo
+  - name: Bullet
     userID: 2
     uniqueID: 3130734947
     locked: 0
