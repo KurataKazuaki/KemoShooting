@@ -4,6 +4,7 @@ using System.Collections;
 public class EnemyObject : MonoBehaviour {
 
 	public int HP;
+	public GameObject ParticleEnemyBreak;
 
 	// Use this for initialization
 	void Start () {
@@ -19,6 +20,8 @@ public class EnemyObject : MonoBehaviour {
 	void Damage (int amount) {
 		HP -= amount;
 		if (HP <= 0) {
+			// 破壊エフェクト用オブジェクトをインスタンス化
+			Instantiate( ParticleEnemyBreak, transform.position, ParticleEnemyBreak.transform.rotation);
 			// オブジェクトを削除
 			Destroy(gameObject);
 		}
