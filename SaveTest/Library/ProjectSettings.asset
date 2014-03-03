@@ -74,6 +74,8 @@ PlayerSettings:
     16:9: 1
     Others: 1
   iPhoneBundleIdentifier: com.Company.ProductName
+  metroEnableIndependentInputSource: 0
+  metroEnableLowLatencyPresentationAPI: 0
   productGUID: 3f4e2cd57852c184db317326ce5767b3
   iPhoneBundleVersion: 1.0
   AndroidBundleVersionCode: 1
@@ -150,7 +152,11 @@ PlayerSettings:
   ps3TrialMode: 0
   flashStrippingLevel: 2
   spritePackerPolicy: 
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    0: DEBUG_ROM;CLASS_DEBUG_WRAPPER_AUTOSETTINGS;CLASS_DEBUG_WRAPPER_USE;CLASS_DEBUG_WRAPPER_ENABLE;CLASS_DEBUG_WRAPPER_OBSOLATE
+    1: DEBUG_ROM;CLASS_DEBUG_WRAPPER_AUTOSETTINGS
+    2: DEBUG_ROM;CLASS_DEBUG_WRAPPER_AUTOSETTINGS;CLASS_DEBUG_WRAPPER_USE;CLASS_DEBUG_WRAPPER_ENABLE;CLASS_DEBUG_WRAPPER_OBSOLATE
+    3: DEBUG_ROM;CLASS_DEBUG_WRAPPER_AUTOSETTINGS;CLASS_DEBUG_WRAPPER_USE;CLASS_DEBUG_WRAPPER_ENABLE;CLASS_DEBUG_WRAPPER_OBSOLATE
   metroPackageName: New Unity Project 3
   metroPackageLogo: 
   metroPackageVersion: 
@@ -172,6 +178,7 @@ PlayerSettings:
   metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   metroSplashScreenUseBackgroundColor: 0
   metroCapabilities: {}
+  metroUnprocessedPlugins: []
   metroCompilationOverrides: 1
   blackberryDeviceAddress: 
   blackberryDevicePassword: 
